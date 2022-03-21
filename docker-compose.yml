@@ -1,0 +1,11 @@
+# docker-compose.yml for testing
+# run 'docker compose run alpine-bash-curl-jq'
+version: '3.8'
+
+services:
+  alpine-bash-curl-jq:
+    build:
+      args:
+        - TARGETARCH=amd64
+      context: .
+    image: alpine-bash-curl-jq:latest
