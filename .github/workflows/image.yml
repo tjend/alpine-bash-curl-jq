@@ -6,6 +6,7 @@ on:
     branches: main
   schedule:
     - cron: '43 5 * * 5' # 05:43 on Fridays
+  workflow_dispatch:
 
 jobs:
   buildx:
